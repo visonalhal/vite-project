@@ -25,6 +25,10 @@ module.exports = {
       files: ["*.ts", "*.tsx"], // Your TypeScript files extension
       extends: ["airbnb", "airbnb-typescript", "prettier"],
       parserOptions: {
+        sourceType: "module",
+        ecmaFeatures: {
+          jsx: true,
+        },
         project: ["./tsconfig.json"], // Specify it only for TypeScript files
       },
       rules: {
