@@ -32,10 +32,15 @@ module.exports = {
         project: ["./tsconfig.json"], // Specify it only for TypeScript files
       },
       rules: {
-        "import/no-extraneous-dependencies": ["error", { devDependencies: ["**/*.config.ts"] }],
+        "import/no-extraneous-dependencies": [
+          "error",
+          { devDependencies: ["**/*.config.ts", "stories/**/*.@(js|ts|jsx|tsx)"] },
+        ],
+        "import/prefer-default-export": "off",
         "prettier/prettier": ["error"],
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx", ".ts", "tsx"] }],
+        "react/require-default-props": "off",
       },
     },
   ],
