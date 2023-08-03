@@ -47,7 +47,7 @@
     "prettier": "2.8.8",
     "storybook": "^7.0.7",
     "typescript": "5.0.4",
-    "vite": "4.3.2",
+    "vite": "4.3.9",
     "vite-plugin-eslint": "1.8.1"
   }
 }
